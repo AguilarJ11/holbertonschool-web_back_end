@@ -1,6 +1,6 @@
 export default class HolbertonCourse {
   constructor(name, lenght, students) {
-    this.name = name
+    this.name = name;
     this.lenght = lenght;
     this.students = students;
   }
@@ -10,8 +10,8 @@ export default class HolbertonCourse {
   }
 
   set name(name) {
-    if (typeof name === String) {    
-        this._name = name;
+    if (typeof name === 'string') {
+      this._name = name;
     }
   }
 
@@ -20,8 +20,8 @@ export default class HolbertonCourse {
   }
 
   set lenght(lenght) {
-    if (typeof length === Number) {
-        this._lenght = lenght;
+    if (typeof lenght === 'number') {
+      this._lenght = lenght;
     }
   }
 
@@ -30,8 +30,10 @@ export default class HolbertonCourse {
   }
 
   set students(students) {
-    if (Array.isArray(students) && students.every(elem => typeof elem === String)) {
-        this._students = students;
+    if (
+      Array.isArray(students) && students.every((elem) => typeof elem === 'string')
+    ) {
+      this._students = students;
     }
   }
 }
