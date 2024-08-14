@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
-import random, asyncio
+import random
+import asyncio
 
 """Return a random number between 0 and max_delay(def 10)"""
 
