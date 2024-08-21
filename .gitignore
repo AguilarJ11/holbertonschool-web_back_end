@@ -2,3 +2,4 @@ node_modules
 *main.js
 *main.py
 __pycache__
+*.csv
