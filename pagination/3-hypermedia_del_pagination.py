@@ -40,19 +40,13 @@ class Server:
         return self.__indexed_dataset
 
     def get_hyper_index(self, index: int = None, page_size: int = 10) -> Dict:
-        
+        """returns a dictionary of a file
+        that contains information about it"""
         file = self.dataset()
         data = file[index:index + page_size]
         return {
             "index": index,
             "data": data,
-            "page_size": page_size, 
+            "page_size": page_size,
             "next_index": index + page_size,
         }
-        
-    """The method should return a dictionary with the following key-value pairs:
-        index: the current start index of the return page. That is the index of the first item in the current page. For example 
-        if requesting page 3 with page_size 20, and no data was removed from the dataset, the current index should be 60.
-        next_index: the next index to query with. That should be the index of the first item after the last item on the current page.
-        page_size: the current page size
-        data: the actual page of the dataset"""
