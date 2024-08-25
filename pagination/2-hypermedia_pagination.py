@@ -50,7 +50,7 @@ class Server:
 
         return data
 
-    def get_hyper(self, page: int = 1, page_size: int = 10) -> Dict[str, any]:
+    def get_hyper(self, page: int = 1, page_size: int = 10) -> Dict:
         """returns a dictionary of a file
         that contains information about it"""
         assert isinstance(page, int) and page > 0
