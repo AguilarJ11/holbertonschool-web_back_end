@@ -49,7 +49,7 @@ class Server:
         data = file[start:end]
 
         return data
-    
+
     def get_hyper(self, page: int = 1, page_size: int = 10) -> Dict[str, any]:
         """returns a dictionary of a file
         that contains information about it"""
