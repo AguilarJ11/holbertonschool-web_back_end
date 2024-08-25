@@ -43,6 +43,8 @@ class Server:
 
         file = self.dataset()
         start, end = index_range(page, page_size)
+        if len(data) > end:
+            return []
         data = file[start:end]
         
         return data
