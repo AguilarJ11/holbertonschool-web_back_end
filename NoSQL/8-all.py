@@ -7,6 +7,9 @@ lists all documents in a collection
 import pymongo
 
 def list_all(mongo_collection):
+    """
+    lists all documents in a collection
+    """
     collection_list = []
     if mongo_collection.count_documents({}) == 0:
         return collection_list
