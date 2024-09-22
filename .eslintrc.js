@@ -1,26 +1,26 @@
 module.exports = {
   env: {
     es6: true,
-    node: true, // Agregue node:true para evitar posibles problemas en entornos Node.js
+    node: true,
     jest: true,
   },
   extends: [
-    'eslint:recommended', // Se agrega una configuración básica recomendada
-    'airbnb-base', // Sigue usando airbnb-base
-    'plugin:jest/recommended', // Cambié a recommended para mayor compatibilidad
+    'eslint:recommended',
+    'airbnb-base',
+    'plugin:jest/recommended',
   ],
   parserOptions: {
-    ecmaVersion: 2020, // Actualicé a 2020 para mayor compatibilidad con las nuevas características de JS
+    ecmaVersion: 2020,
     sourceType: 'module',
   },
   plugins: ['jest'],
   rules: {
-    'no-console': 'off', // Permite console.log para depuración
-    'no-shadow': 'off', // Desactiva la regla de sombras
+    'no-console': 'off',
+    'no-shadow': 'off',
     'no-restricted-syntax': [
       'error',
-      'LabeledStatement', // Permite etiquetas
-      'WithStatement', // Permite with
+      'LabeledStatement',
+      'WithStatement',
     ],
   },
   overrides: [
