@@ -3,3 +3,6 @@ node_modules
 *main.py
 __pycache__
 *.csv
+.eslintrc.js
+package-lock.json
+package.json
